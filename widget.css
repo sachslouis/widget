@@ -1,0 +1,73 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#widget{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 100vw;
+    background-color: lightgrey;
+}
+.widgetItem{
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    flex-direction: column;
+    height: 40%;
+    width: 25%;
+    background-color: lightgrey;
+    margin: 1%;
+}
+.branding{
+    width: 100%;
+    height: 30px;
+    background-color: lightgrey;
+    color: grey;
+    font-weight: 700;
+    font-size: 12px;
+    font-family: Helvetica;
+    padding-top: 1%;
+
+}
+.thumbnail{
+    height: 200px;
+    width: 100%;
+    background-image: url("img/banana.jpeg");
+}
+.itemTitle{
+    height: 2%;
+    width: 100%;
+    background-color: lightgrey;
+    font-weight: 700;
+    font-family: helvetica;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 8%;
+    background-color: lightgrey;
+}
+#alsoLike{
+    font-weight: 700;
+    font-family: helvetica;
+    text-align: center;
+    vertical-align: center;
+    width: 200px;
+    height: auto;
+    background-color: lightgrey;
+    margin-top: 1em;
+    padding-left: 100px;
+}
+#disclosure{
+    width: 200px;
+    height: auto;
+    background-color: lightgrey;
+    margin-top: 1.5em;
+    font-size: 12px;
+    padding-right: 100px;
+
+
+}
+
