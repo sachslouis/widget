@@ -15,9 +15,10 @@ body{
     align-items: center;
     flex-direction: column;
     height: 40%;
-    width: 25%;
+    width: 23%;
     background-color: lightgrey;
-    margin: 1%;
+    margin: .5% 1.5%;
+    cursor: pointer;
 }
 .branding{
     width: 100%;
@@ -28,12 +29,19 @@ body{
     font-size: 12px;
     font-family: Helvetica;
     padding-top: 1%;
-
+}
+.branding:hover{
+    font-size: 13px;
 }
 .thumbnail{
     height: 200px;
     width: 100%;
     background-image: url("img/banana.jpeg");
+    margin-bottom: 5px;
+    border-radius: 2px;
+}
+.thumbnail:hover{
+    box-shadow: 3px 3px 5px grey;
 }
 .itemTitle{
     height: 2%;
@@ -42,10 +50,13 @@ body{
     font-weight: 700;
     font-family: helvetica;
 }
+.itemTitle:hover{
+    color: red;
+}
 #header{
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    width: 80%;
     height: 8%;
     background-color: lightgrey;
 }
@@ -58,7 +69,6 @@ body{
     height: auto;
     background-color: lightgrey;
     margin-top: 1em;
-    padding-left: 100px;
 }
 #disclosure{
     width: 200px;
@@ -66,8 +76,10 @@ body{
     background-color: lightgrey;
     margin-top: 1.5em;
     font-size: 12px;
-    padding-right: 100px;
-
-
 }
 
+@media only screen and (max-width: 500px) {
+    .widgetItem {
+      width: 50%;
+    }
+  }

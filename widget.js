@@ -1,6 +1,11 @@
+function click(){
+    console.log("You clicked me");
+}
+
 var pictureArray = ["img/banana.jpeg", "img/walrus.jpeg", "img/moustache.jpg", "img/belly.jpeg", "img/trash.jpeg", "img/cat.jpeg"];
-var clickbaitArray = ["Click here to learn how you are going to die", "Do you know what Beatles songs REALLY mean?", "What animal do you look like?", "10 of the hottest summer fashion trends you never saw coming", "This deadly mold is growing in your garbage can right now!", "Friend or enemy. Take this quiz to see if you can spot the difference"]
+var clickbaitArray = ["Click here to find out how you are going to die", "Do you know what Beatles songs REALLY mean?", "What animal do you look like?", "10 of the hottest summer fashion trends you never saw coming", "This deadly mold is growing in your garbage can right now!", "Friend or enemy. Take this quiz to see if you can spot the difference"]
 var advertiserArray=["Brought to you by the letter E", "BuzzDrugs", "WhoRU | Sponsored Links", "ClickBatesMotel", "MindHatch", "Kinks College"]
+var linkArray=["https://www.gotoquiz.com/how_am_i_going_to_die", "https://allthatsinteresting.com/beatles-songs", "https://www.quizony.com/what-animal-do-i-look-like/1.html", "https://www.thetrendspotter.net/fashion-trends-spring-summer-2019/", "https://gleampressurewashing.com/5-worst-things-growing-trash-can/", "https://www.proprofs.com/quiz-school/story.php?title=frends-enemies"];
 var widget = document.createElement("div");
 widget.id="widget";
 var header=document.createElement("header");
@@ -24,9 +29,11 @@ disclosure.appendChild(taboolaIcon)
 
 
 
+
 for(i=0; i<pictureArray.length; i++){
-    var widgetItem = document.createElement("div");
+    var widgetItem = document.createElement("a");
     widgetItem.className = "widgetItem";
+    widgetItem.setAttribute("href", linkArray[i]);
 
     var thumbnail = document.createElement("img");
     thumbnail.setAttribute("src", pictureArray[i]); 
@@ -48,4 +55,5 @@ for(i=0; i<pictureArray.length; i++){
     document.getElementById("widget").appendChild(widgetItem);
 
 }
+
 
