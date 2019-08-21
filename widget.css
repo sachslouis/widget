@@ -2,6 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
 }
+
 #widget{
     display: flex;
     flex-flow: wrap;
@@ -9,6 +10,7 @@ body{
     width: 100vw;
     background-color: lightgrey;
 }
+
 .widgetItem{
     display: flex;
     /*justify-content: center;*/
@@ -20,6 +22,7 @@ body{
     margin: .5% 1.5%;
     cursor: pointer;
 }
+
 .branding{
     width: 100%;
     height: 30px;
@@ -30,19 +33,23 @@ body{
     font-family: Helvetica;
     padding-top: 1%;
 }
+
 .branding:hover{
     font-size: 13px;
 }
+
 .thumbnail{
     height: 200px;
     width: 100%;
-    background-image: url("img/banana.jpeg");
+    /*background-image: url("img/banana.jpeg");*/
     margin-bottom: 5px;
     border-radius: 2px;
 }
+
 .thumbnail:hover{
     box-shadow: 3px 3px 5px grey;
 }
+
 .itemTitle{
     height: 2%;
     width: 100%;
@@ -50,9 +57,11 @@ body{
     font-weight: 700;
     font-family: helvetica;
 }
+
 .itemTitle:hover{
     color: red;
 }
+
 #header{
     display: flex;
     justify-content: space-between;
@@ -60,6 +69,7 @@ body{
     height: 8%;
     background-color: lightgrey;
 }
+
 #alsoLike{
     font-weight: 700;
     font-family: helvetica;
@@ -70,6 +80,7 @@ body{
     background-color: lightgrey;
     margin-top: 1em;
 }
+
 #disclosure{
     width: 200px;
     height: auto;
@@ -78,8 +89,26 @@ body{
     font-size: 12px;
 }
 
+@media only screen and (max-width: 950px) {
+    .thumbnail {
+        height: 26vh;
+    }
+  }
+
 @media only screen and (max-width: 500px) {
     .widgetItem {
       width: 50%;
+    }
+    .thumbnail{
+      height: 100%;
+    }
+    #disclosure{
+        width: 150px;
+    }
+    
+    #header{
+        justify-content: center;
+        flex-flow: wrap;
+        width: 50%;
     }
   }
