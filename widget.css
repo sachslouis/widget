@@ -93,11 +93,18 @@ body{
     .thumbnail {
         height: 26vh;
     }
+    .widgetItem{
+        width: 30%;
+    }
+    #header{
+        width: 100%;
+    }
+    
   }
 
 @media only screen and (max-width: 500px) {
     .widgetItem {
-      width: 50%;
+      width: 80%;
     }
     .thumbnail{
       height: 100%;
@@ -105,10 +112,12 @@ body{
     #disclosure{
         width: 150px;
     }
-    
+    #alsoLike{
+        font-size: 20px;
+    }
     #header{
         justify-content: center;
         flex-flow: wrap;
-        width: 50%;
+        width: 60%;
     }
   }
